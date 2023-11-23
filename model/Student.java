@@ -1,11 +1,13 @@
 package model;
 
+import java.util.List;
+
 public class Student {
     private int studentId;
     private String name;
     private String phoneNumber;
     private int grade;
-
+    private List<Enrollment> enrollments;
     // 构造方法
     public Student(int studentId, String name, String phoneNumber, int grade) {
         this.studentId = studentId;
@@ -46,4 +48,12 @@ public class Student {
     public void setGrade(int grade) {
         this.grade = grade;
     }
+
+	public List<Enrollment> getEnrollments() {
+		return enrollments;
+	}
+
+	public void setEnrollments(List<Enrollment> enrollments) {
+		this.enrollments = enrollments;
+	}
 }
