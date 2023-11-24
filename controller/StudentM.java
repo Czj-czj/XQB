@@ -125,7 +125,7 @@ public class StudentM implements StudentM_I {
     private static ArrayList<Student> studentList = new ArrayList<>();
 
     // 根据学员编号查找学员
-    private Student findStudentById(int studentId) {
+    public Student findStudentById(int studentId) {
         for (Student student : studentList) {
             if (student.getStudentId() == studentId) {
                 return student;
